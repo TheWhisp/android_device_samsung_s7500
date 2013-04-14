@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/s7500/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/trebon/overlay
 
 include device/samsung/msm7x27a-common/msm7x27a.mk
 
 ## splash screen
 PRODUCT_COPY_FILES += \
-    device/samsung/s7500/rootdir/GT-S7500.rle:root/GT-S7500.rle
+    device/samsung/trebon/rootdir/GT-S7500.rle:root/GT-S7500.rle
 
 ## Permissions
 PRODUCT_COPY_FILES += \

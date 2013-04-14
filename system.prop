@@ -6,14 +6,15 @@
 ## RIL, network
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
-ro.telephony.ril_class=SamsungMSMRIL
-ro.telephony.call_ring.multiple=false
-ro.telephony.call_ring.delay=3000
-mobiledata.interfaces=pdp0,gprs,ppp0
-DEVICE_PROVISIONED=1
+
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+ro.telephony.ril_class=SamsungMSM7x27a
+ro.telephony.ril.v3=datacall,icccardstatus
 
 ## Wi-Fi interface
 wifi.interface=wlan0
+wifi.ap.interface=wlan0
 wifi.supplicant_scan_interval=60
 
 ## Display, graphics
@@ -28,24 +29,20 @@ persist.sys.use_dithering=0
 ## Memory
 ro.zram.default=0
 persist.sys.purgeable_assets=1
+sys.mem.max_hidden_apps=10
 
 ## Qualcomm
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 com.qc.hardware=true
-debug.enabletr=true
-ro.hw_plat=7x27a
+debug.enabletr=false
 
 ## USB, storage
-persist.sys.usb.config=mass_storage,adb
-persist.service.adb.enable=1
+persist.sys.usb.config=mtp
 ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1
 ro.vold.umsdirtyratio=50
 
-## MM modules
-media.stagefright.enable-player=true
-media.stagefright.enable-meta=false
-media.stagefright.enable-scan=true
-media.stagefright.enable-http=true
-media.stagefright.enable-fma2dp=true
-media.stagefright.enable-aac=true
-media.stagefright.enable-qcp=true
+## Dalvik
+dalvik.vm.checkjni=0
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
+dalvik.vm.execution-mode=int:jit

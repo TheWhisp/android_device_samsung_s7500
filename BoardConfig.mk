@@ -21,4 +21,4 @@ include device/samsung/msm7x27a-common/BoardConfigCommon.mk
 TARGET_KERNEL_CONFIG := cyanogenmod_trebon_defconfig
 
 ## OTA assert
-TARGET_OTA_ASSERT_DEVICE := trebon,s7500,GT-S7500
+TARGET_OTA_ASSERT_DEVICE := trebon,GT-S7500
