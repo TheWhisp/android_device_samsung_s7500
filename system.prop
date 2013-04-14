@@ -7,8 +7,6 @@
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
 
-ro.ril.hsxpa=1
-ro.ril.gprsclass=10
 ro.telephony.ril_class=SamsungMSM7x27a
 ro.telephony.ril.v3=datacall,icccardstatus
 
@@ -34,7 +32,7 @@ sys.mem.max_hidden_apps=10
 ## Qualcomm
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 com.qc.hardware=true
-debug.enabletr=false
+debug.enabletr=true
 
 ## USB, storage
 persist.sys.usb.config=mtp
