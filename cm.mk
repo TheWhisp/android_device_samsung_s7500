@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,15 +19,15 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Inherit device files
-$(call inherit-product, device/samsung/s7500/s7500.mk)
+$(call inherit-product, device/samsung/trebon/trebon.mk)
 
 ## Setup device configuration
-PRODUCT_NAME := cm_s7500
+PRODUCT_NAME := cm_trebon
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-S7500
 PRODUCT_RELEASE_NAME := GT-S7500
-PRODUCT_DEVICE := s7500
+PRODUCT_DEVICE := trebon
 
 ## Bootanimation
 TARGET_SCREEN_HEIGHT := 480
