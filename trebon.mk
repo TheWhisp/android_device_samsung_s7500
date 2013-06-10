@@ -16,7 +16,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/trebon/overlay
 
 include device/samsung/msm7x27a-common/msm7x27a.mk
 
-## splash screen
+## Splash screen
 PRODUCT_COPY_FILES += \
     device/samsung/trebon/rootdir/GT-S7500.rle:root/GT-S7500.rle
 
