@@ -8,6 +8,8 @@ rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
 ro.telephony.ril_class=SamsungRIL
 ro.telephony.ril.v3=datacall,icccardstatus
+ro.telephony.call_ring.multiple=false
+ro.telephony.call_ring.delay=3000
 
 ## Wi-Fi interface
 wifi.interface=wlan0
@@ -19,7 +21,7 @@ ro.opengles.version=131072
 ro.max.fling_velocity=4000
 debug.sf.hw=1
 debug.gr.numframebuffers=3
-hwui.render_dirty_regions=false
+debug.hwc.dynThreshold=1.9
 persist.sys.use_dithering=0
 
 ## Memory
@@ -30,7 +32,13 @@ sys.mem.max_hidden_apps=10
 ## Qualcomm
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 com.qc.hardware=true
-debug.enabletr=true
+dev.pm.dyn_samplingrate=1
+dev.pm.dyn_sample_period=700000
+
+## FM
+ro.fm.analogpath.supported=true
+ro.fm.transmitter=false
+ro.fm.mulinst.recording.support=false
 
 ## USB, storage
 persist.sys.usb.config=mtp,adb
@@ -52,17 +60,8 @@ media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
 media.stagefright.enable-qcp=true
 
-## Bluetooth
-ro.qc.bluetooth.stack=bluez
-ro.qualcomm.bluetooth.dun=true
-ro.qualcomm.bluetooth.ftp=true
-ro.qualcomm.bluetooth.hfp=true
-ro.qualcomm.bluetooth.hsp=true
-ro.qualcomm.bluetooth.map=true
-ro.qualcomm.bluetooth.nap=true
-ro.qualcomm.bluetooth.opp=true
-ro.qualcomm.bluetooth.pbap=true
-ro.qualcomm.bluetooth.sap=true
-
 ## CWM
 ro.cwm.enable_key_repeat=true
+
+## Camcorder
+debug.camcorder.disablemeta=1

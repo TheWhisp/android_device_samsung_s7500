@@ -17,6 +17,9 @@
 
 include device/samsung/msm7x27a-common/BoardConfigCommon.mk
 
+## Platform
+TARGET_BOOTLOADER_BOARD_NAME := trebon
+
 ## Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_trebon_defconfig
 
