@@ -25,3 +25,6 @@ TARGET_KERNEL_CONFIG := cyanogenmod_trebon_defconfig
 
 ## OTA assert
 TARGET_OTA_ASSERT_DEVICE := trebon,GT-S7500
+
+## Camera
+COMMON_GLOBAL_CFLAGS += -DHAVE_AUTOFOCUS -DHAVE_FLASH
