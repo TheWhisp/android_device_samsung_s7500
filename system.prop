@@ -22,7 +22,7 @@ ro.max.fling_velocity=4000
 debug.sf.hw=1
 debug.gr.numframebuffers=3
 debug.hwc.dynThreshold=1.9
-persist.sys.use_dithering=0
+persist.sys.use_dithering=2
 debug.composition.type=mdp
 
 ## Memory
