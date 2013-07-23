@@ -21,9 +21,7 @@ ro.opengles.version=131072
 ro.max.fling_velocity=4000
 debug.sf.hw=1
 debug.gr.numframebuffers=3
-debug.hwc.dynThreshold=1.9
 persist.sys.use_dithering=2
-debug.composition.type=mdp
 
 ## Memory
 ro.zram.default=0
@@ -33,8 +31,6 @@ sys.mem.max_hidden_apps=8
 ## Qualcomm
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 com.qc.hardware=true
-dev.pm.dyn_samplingrate=1
-dev.pm.dyn_sample_period=700000
 
 ## FM
 ro.fm.analogpath.supported=true
