@@ -13,7 +13,7 @@ ro.telephony.call_ring.delay=3000
 
 ## Wi-Fi interface
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=60
+wifi.supplicant_scan_interval=180
 
 ## Display, graphics
 ro.sf.lcd_density=160
@@ -26,7 +26,7 @@ persist.sys.use_dithering=2
 ## Memory
 ro.zram.default=0
 persist.sys.purgeable_assets=1
-sys.mem.max_hidden_apps=8
+ro.sys.fw.bg_apps_limit=10
 
 ## Qualcomm
 ro.vendor.extension_library=/system/lib/libqc-opt.so
