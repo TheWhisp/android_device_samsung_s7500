@@ -13,6 +13,7 @@ ro.telephony.call_ring.delay=3000
 
 ## Wi-Fi interface
 wifi.interface=wlan0
+wifi.p2pinterface=wlan0
 wifi.supplicant_scan_interval=180
 
 ## Display, graphics
@@ -21,12 +22,11 @@ ro.opengles.version=131072
 ro.max.fling_velocity=4000
 debug.sf.hw=1
 debug.gr.numframebuffers=3
-persist.sys.use_dithering=2
 
 ## Memory
 ro.zram.default=0
-persist.sys.purgeable_assets=1
-ro.sys.fw.bg_apps_limit=10
+persist.sys.purgeable_assets=0
+sys.mem.max_hidden_apps=10
 
 ## Qualcomm
 ro.vendor.extension_library=/system/lib/libqc-opt.so
