@@ -23,6 +23,12 @@ ro.max.fling_velocity=4000
 debug.sf.hw=1
 debug.gr.numframebuffers=3
 
+## (Low Power) Audio
+lpa.decode=false
+audio.decoder_override_check=true
+use.non-omx.mp3.decoder=true
+use.non-omx.aac.decoder=true
+
 ## Memory
 ro.zram.default=0
 persist.sys.purgeable_assets=0
@@ -44,6 +50,7 @@ ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1
 ro.vold.umsdirtyratio=50
 
 ## Dalvik
+dalvik.vm.debug.alloc=0
 dalvik.vm.checkjni=0
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
