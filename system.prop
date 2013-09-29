@@ -16,6 +16,9 @@ wifi.interface=wlan0
 wifi.p2pinterface=wlan0
 wifi.supplicant_scan_interval=180
 
+## Bluetooth
+ro.bt.bdaddr_path=/data/misc/bluedroid/bdaddr
+
 ## Display, graphics
 ro.sf.lcd_density=160
 ro.opengles.version=131072
