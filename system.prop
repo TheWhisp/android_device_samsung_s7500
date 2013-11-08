@@ -25,7 +25,7 @@ ro.opengles.version=131072
 ro.max.fling_velocity=4000
 debug.sf.hw=1
 debug.gr.numframebuffers=3
-debug.composition.type=mpd
+debug.composition.type=mdp
 
 ## Low Power Audio
 lpa.decode=true
