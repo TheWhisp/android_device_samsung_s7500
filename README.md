@@ -1,4 +1,4 @@
-CyanogenMod 10.1 device configuration for Samsung Galaxy Ace Plus - GT-S7500
+CyanogenMod 11 device configuration for Samsung Galaxy Ace Plus - GT-S7500
 
 Created and maintained by TheWhisp
 

@@ -23,8 +23,5 @@ TARGET_BOOTLOADER_BOARD_NAME := trebon
 ## Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod/trebon_defconfig
 
-## Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/trebon/bluetooth
-
 ## OTA assert
 TARGET_OTA_ASSERT_DEVICE := trebon,GT-S7500
