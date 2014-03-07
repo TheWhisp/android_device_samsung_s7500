@@ -11,12 +11,24 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# This file is executed by build/envsetup.sh, and can use anything
-# defined in envsetup.sh.
-#
-# In particular, you can add lunch options with the add_lunch_combo
-# function: add_lunch_combo generic-eng
+## Specify phone tech before including full_phone
+$(call inherit-product, vendor/cm/config/gsm.mk)
 
-add_lunch_combo cm_trebon-userdebug
+## Inherit common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+## Inherit device files
+$(call inherit-product, device/samsung/trebon/trebon.mk)
+
+## Setup device configuration
+PRODUCT_NAME := cm_trebon
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
+PRODUCT_MODEL := GT-S7500
+PRODUCT_RELEASE_NAME := GT-S7500
+PRODUCT_DEVICE := trebon
+
+## Bootanimation
+TARGET_SCREEN_HEIGHT := 480
+TARGET_SCREEN_WIDTH := 320
